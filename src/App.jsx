@@ -1,7 +1,7 @@
 function App() {
   return (
     <main>
-      <h1>Hello, Zain! Zain</h1>
+      <h1>Hello, Zain!</h1>
       <p>My React journey starts with Vite.</p>
     </main>
   );
