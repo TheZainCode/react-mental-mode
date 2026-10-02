@@ -1,8 +1,8 @@
+import Task1 from './components/Task1.jsx'
 function App() {
   return (
     <main>
-      <h1>Hello, Zain!</h1>
-      <p>My React journey starts with Vite.</p>
+      <Task1 />
     </main>
   );
 }
