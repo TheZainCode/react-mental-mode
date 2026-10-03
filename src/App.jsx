@@ -5,6 +5,7 @@ import Header from './components/Header.jsx';
 import MainContent from './components/MainContent.jsx';
 import Footer from './components/Footer.jsx';
 import UserCard from './components/UserCard.jsx';
+import Card from './components/Card.jsx';
 
 function App() {
   return (
@@ -18,6 +19,18 @@ function App() {
         <UserCard name="Ali" role="Frontend Developer" experience={2} isAvailable={true}></UserCard>
         <UserCard name="Ahmad"  role="Backend Developer"  experience={3}  isAvailable={false}></UserCard>
         <UserCard name="Sara"  role="UI Designer"  experience={1}  isAvailable={true}></UserCard>
+        <Card>
+          <h2>Frontend Development</h2>
+          <p>HTML • CSS • JavaScript</p>
+        </Card>
+        <Card>
+          <h2>React Development</h2>
+          <p>Components • Props • State</p>
+        </Card>
+        <Card>
+          <h2>Backend Development</h2>
+          <p>APIs • Databases • Authentication</p>
+        </Card>
       </main>
       <Footer />
     </>
