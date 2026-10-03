@@ -2,13 +2,16 @@ import { useState } from "react";
 function Counter(){
     const [count,setCount]=useState(0);
     function handleIncrement(){
-        setCount(count+1);
+        setCount(prevCount=>prevCount+1);
     }
     function handleDecrement(){
-        setCount(count-1);
+        setCount(prevCount=>prevCount-1);
     }
     function handleReset(){
         setCount(0)
+    }
+    function handleAddingFive(){
+        setCount(prevCount=>prevCount+5);
     }
     return(
         <section>
@@ -16,6 +19,7 @@ function Counter(){
             <button onClick={handleIncrement}>+</button>
             <button onClick={handleReset}>Reset</button>
             <button onClick={handleDecrement}>-</button>
+            <button onClick={handleAddingFive}>+5</button>
         </section>
     )
 }
