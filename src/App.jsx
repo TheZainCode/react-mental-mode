@@ -6,6 +6,7 @@ import MainContent from './components/MainContent.jsx';
 import Footer from './components/Footer.jsx';
 import UserCard from './components/UserCard.jsx';
 import Card from './components/Card.jsx';
+import ProductCard from './components/ProductCard.jsx';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           <h2>Backend Development</h2>
           <p>APIs • Databases • Authentication</p>
         </Card>
+        <ProductCard name="Laptop" price={1200} category="Electronics" inStock/>
+        <ProductCard name="Keyboard" price={60} category="Accessories" inStock={false}/>
+        <ProductCard name="Headphones" price={80} category="Accessories" inStock/>
       </main>
       <Footer />
     </>
