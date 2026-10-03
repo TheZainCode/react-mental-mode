@@ -8,6 +8,7 @@ import UserCard from './components/UserCard.jsx';
 import Card from './components/Card.jsx';
 import ProductCard from './components/ProductCard.jsx';
 import ActionButtons from './components/ActionButtons.jsx';
+import Counter from './components/Counter.jsx';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <ProductCard name="Keyboard" price={60} category="Accessories" inStock={false}/>
         <ProductCard name="Headphones" price={80} category="Accessories" inStock/>
         <ActionButtons />
+        <Counter />
       </main>
       <Footer />
     </>
