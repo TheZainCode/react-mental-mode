@@ -10,6 +10,7 @@ import ProductCard from './components/ProductCard.jsx';
 import ActionButtons from './components/ActionButtons.jsx';
 import Counter from './components/Counter.jsx';
 import Profile from './components/Profile.jsx';
+import Skills from './components/Skills.jsx';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <ActionButtons />
         <Counter />
         <Profile />
+        <Skills />
       </main>
       <Footer />
     </>
