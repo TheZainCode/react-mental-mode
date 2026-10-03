@@ -9,6 +9,7 @@ import Card from './components/Card.jsx';
 import ProductCard from './components/ProductCard.jsx';
 import ActionButtons from './components/ActionButtons.jsx';
 import Counter from './components/Counter.jsx';
+import Profile from './components/Profile.jsx';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <ProductCard name="Headphones" price={80} category="Accessories" inStock/>
         <ActionButtons />
         <Counter />
+        <Profile />
       </main>
       <Footer />
     </>
