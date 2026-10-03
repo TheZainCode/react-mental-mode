@@ -13,6 +13,11 @@ function Counter(){
     function handleAddingFive(){
         setCount(prevCount => prevCount+5);
     }
+    function handleAddingThree(){
+        setCount(prevCount => prevCount+1);
+        setCount(prevCount => prevCount+1);
+        setCount(prevCount => prevCount+1);
+    }
     return(
         <section>
             <h1>Count: {count}</h1>
@@ -20,6 +25,7 @@ function Counter(){
             <button onClick={handleReset}>Reset</button>
             <button onClick={handleDecrement}>-</button>
             <button onClick={handleAddingFive}>+5</button>
+            <button onClick={handleAddingThree}>+3</button>
         </section>
     )
 }
