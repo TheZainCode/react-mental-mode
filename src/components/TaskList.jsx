@@ -39,7 +39,8 @@ function TaskList(){
         ]);
     }
     return(
-        <>
+        <section>
+            <h2>Task List</h2>
         {tasks.map((task) => (
             <article key={task.id}>
                 <h3>{task.title}</h3>
@@ -51,7 +52,7 @@ function TaskList(){
             <button onClick={handleDeleteJSX}>Delete JSX</button>
             <button onClick={handleAddReactRouter}>Add React Router</button>
         </div>
-        </>
+        </section>
     );
 }
 export default TaskList;
