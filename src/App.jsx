@@ -11,6 +11,7 @@ import ActionButtons from './components/ActionButtons.jsx';
 import Counter from './components/Counter.jsx';
 import Profile from './components/Profile.jsx';
 import Skills from './components/Skills.jsx';
+import TaskList from './components/TaskList.jsx';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Counter />
         <Profile />
         <Skills />
+        <TaskList />
       </main>
       <Footer />
     </>
