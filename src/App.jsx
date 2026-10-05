@@ -60,7 +60,7 @@ function handleReset(){
         <Skills />
         <TaskList />
         <CounterDisplay count={count} />
-        <CounterControls count={count}
+        <CounterControls
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
         onReset={handleReset} />

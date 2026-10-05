@@ -1,5 +1,4 @@
-import { useState } from "react";
-function CounterControls({count, onIncrease, onDecrease, onReset}){
+function CounterControls({onIncrease, onDecrease, onReset}){
     return(
         <>
         <button onClick={onIncrease}>+1</button>
