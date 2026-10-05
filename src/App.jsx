@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Task1 from './components/Task1.jsx';
 import UserStatus from './components/UserStatus.jsx';
 import UserList from './components/UserList.jsx';
@@ -12,8 +13,21 @@ import Counter from './components/Counter.jsx';
 import Profile from './components/Profile.jsx';
 import Skills from './components/Skills.jsx';
 import TaskList from './components/TaskList.jsx';
+import CounterControls from './components/CounterControls.jsx';
+import CounterDisplay from './components/CounterDisplay.jsx';
+
 
 function App() {
+  const [count, setCount]=useState(0);
+function handleIncrease(){
+  setCount((prevCount) => prevCount+1);
+}
+function handleDecrease(){
+  setCount((prevCount) => prevCount-1);
+}
+function handleReset(){
+  setCount(0);
+}
   return (
     <>
       <Header />
@@ -45,6 +59,11 @@ function App() {
         <Profile />
         <Skills />
         <TaskList />
+        <CounterDisplay count={count} />
+        <CounterControls count={count}
+        onIncrease={handleIncrease}
+        onDecrease={handleDecrease}
+        onReset={handleReset} />
       </main>
       <Footer />
     </>
