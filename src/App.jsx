@@ -15,7 +15,7 @@ import Skills from './components/Skills.jsx';
 import TaskList from './components/TaskList.jsx';
 import CounterControls from './components/CounterControls.jsx';
 import CounterDisplay from './components/CounterDisplay.jsx';
-
+import LoginForm from './components/LoginForm.jsx';
 
 function App() {
   const [count, setCount]=useState(0);
@@ -64,6 +64,7 @@ function handleReset(){
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
         onReset={handleReset} />
+        <LoginForm />
       </main>
       <Footer />
     </>
