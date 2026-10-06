@@ -16,6 +16,7 @@ import TaskList from './components/TaskList.jsx';
 import CounterControls from './components/CounterControls.jsx';
 import CounterDisplay from './components/CounterDisplay.jsx';
 import LoginForm from './components/LoginForm.jsx';
+import RegisterForm from './components/RegisterForm.jsx';
 
 function App() {
   const [count, setCount]=useState(0);
@@ -65,6 +66,7 @@ function handleReset(){
         onDecrease={handleDecrease}
         onReset={handleReset} />
         <LoginForm />
+        <RegisterForm />
       </main>
       <Footer />
     </>
