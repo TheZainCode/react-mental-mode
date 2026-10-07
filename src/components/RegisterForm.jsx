@@ -37,6 +37,12 @@ function RegisterForm(){
         }
 
         console.log("Form Submitted Successfully", formData);
+        setFormData({
+            name:"",
+            email:"",
+            password:""
+        });
+        setError("");
     } 
 
     return(
