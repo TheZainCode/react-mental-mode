@@ -6,6 +6,7 @@ function RegisterForm(){
         email: "",
         password: ""
     });
+    const [error, setError]=useState("");
 
     function handleChange(event){
         const { name, value } = event.target;
@@ -18,19 +19,20 @@ function RegisterForm(){
     function handleSubmit(event){
         event.preventDefault();
 
+        setError("");
         if(!formData.name.trim()){
-            console.log("Please enter a valid name");
+            setError("Please enter a valid name");
             return;
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if(!formData.email.trim() || !emailRegex.test(formData.email)){
-            console.log("Please enter a valid email Address");
+            setError("Please enter a valid email Address");
             return;
         }
 
         if(!formData.password || formData.password.length < 6){
-            console.log("Please enter a valid password");
+            setError("Please enter a valid password");
             return;
         }
 
@@ -46,6 +48,7 @@ function RegisterForm(){
                 
                 <h3>Name: {formData.name}</h3>
                 <p>Email: {formData.email}</p>
+                {error && <p>{ error}</p>}
                 <button type="submit">Register</button>
             </form>
         </>
