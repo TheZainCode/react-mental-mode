@@ -17,6 +17,7 @@ import CounterControls from './components/CounterControls.jsx';
 import CounterDisplay from './components/CounterDisplay.jsx';
 import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx';
+import DocumentTitle from './components/DocumentTitle.jsx';
 
 function App() {
   const [count, setCount]=useState(0);
@@ -67,6 +68,7 @@ function handleReset(){
         onReset={handleReset} />
         <LoginForm />
         <RegisterForm />
+        <DocumentTitle />
       </main>
       <Footer />
     </>
