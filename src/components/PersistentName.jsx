@@ -6,12 +6,12 @@ function PersistentName(){
     useEffect(()=>{
         localStorage.setItem("name",name)
     },[name]);
-    function handleName(event){
+    function handleNameChange(event){
         setName(event.target.value)
     }
     return(
     <section>
-        <input type="text" value={name} onChange={handleName} placeholder="Enter Your Name" />
+        <input type="text" value={name} onChange={handleNameChange} placeholder="Enter Your Name" />
         <h3>Hello, {name}</h3>
     </section>
     )
