@@ -18,6 +18,7 @@ import CounterDisplay from './components/CounterDisplay.jsx';
 import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx';
 import DocumentTitle from './components/DocumentTitle.jsx';
+import Timer from './components/Timer.jsx';
 
 function App() {
   const [count, setCount]=useState(0);
@@ -69,6 +70,7 @@ function handleReset(){
         <LoginForm />
         <RegisterForm />
         <DocumentTitle />
+        <Timer />
       </main>
       <Footer />
     </>
