@@ -19,6 +19,7 @@ import LoginForm from './components/LoginForm.jsx';
 import RegisterForm from './components/RegisterForm.jsx';
 import DocumentTitle from './components/DocumentTitle.jsx';
 import Timer from './components/Timer.jsx';
+import PersistentName from './components/PersistentName.jsx';
 
 function App() {
   const [count, setCount]=useState(0);
@@ -71,6 +72,7 @@ function handleReset(){
         <RegisterForm />
         <DocumentTitle />
         <Timer />
+        <PersistentName />
       </main>
       <Footer />
     </>
